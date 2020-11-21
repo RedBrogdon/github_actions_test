@@ -1,2 +1,3 @@
 # github_actions_test
-Just testing out GitHub actions
+
+Just testing out GitHub actions.
