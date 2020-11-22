@@ -31,6 +31,8 @@ jobs:
           channel: ${{ matrix.flutter_version }}
       - run: flutter pub get
       - run: flutter format --set-exit-if-changed .
+        continue-on-error: ${{ allow_failure }}
       - run: flutter analyze
-        continue-on-error: true
+        continue-on-error: ${{ allow_failure }}
       - run: flutter test
+        continue-on-error: ${{ allow_failure }}
