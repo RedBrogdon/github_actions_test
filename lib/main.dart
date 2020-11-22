@@ -104,6 +104,14 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.headline4,
             ),
+            Stack(
+              overflow: Overflow.clip,
+              children: <Widget>[
+                Text('Whatever.'),
+                Text('Whatever.'),
+                Text('Whatever.'),
+              ],
+            )
           ],
         ),
       ),
